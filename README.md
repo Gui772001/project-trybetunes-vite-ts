@@ -72,9 +72,9 @@ Neste projeto, verificamos se você é capaz de:
 
   1. Clone o repositório
 
-  - Use o comando: `git clone git@github.com:tryber/sd-0x-project-trybetunes.git`.
+  - Use o comando: `git clone git@github.com:tryber/sd-035-project-trybetunes-vite-ts.git`.
   - Entre na pasta do repositório que você acabou de clonar:
-    - `cd sd-0x-project-trybetunes`
+    - `cd sd-035-project-trybetunes-vite-ts`
 
   2. Instale as dependências
 
@@ -88,7 +88,7 @@ Neste projeto, verificamos se você é capaz de:
     - Exemplo: `git checkout master`
   - Agora crie uma branch à qual você vai submeter os `commits` do seu projeto
     - Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
-    - Exemplo: `git checkout -b joaozinho-sd-0x-project-trybetunes`
+    - Exemplo: `git checkout -b joaozinho-sd-035-project-trybetunes-vite-ts`
 
   4. Adicione as mudanças ao _stage_ do Git e faça um `commit`
 
@@ -105,11 +105,11 @@ Neste projeto, verificamos se você é capaz de:
 
   5. Adicione sua branch com o novo `commit` ao repositório remoto
 
-  - Usando o exemplo anterior: `git push -u origin joaozinho-sd-0x-project-trybetunes`
+  - Usando o exemplo anterior: `git push -u origin joaozinho-sd-035-project-trybetunes-vite-ts`
 
   6. Crie um `Pull Request` _(PR)_
 
-  - Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-project-trybetunes/pulls)
+  - Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-035-project-trybetunes-vite-ts/pulls)
   - Clique no botão verde _"New pull request"_
   - Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
   - Coloque um título para a sua _Pull Request_
@@ -117,7 +117,7 @@ Neste projeto, verificamos se você é capaz de:
   - Clique no botão verde _"Create pull request"_.
   - Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_.
   - **Não se preocupe em preencher mais nada por enquanto!**
-  - Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-0x-project-trybetunes/pulls) e confira que o seu _Pull Request_ está criado
+  - Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-035-project-trybetunes-vite-ts/pulls) e confira que o seu _Pull Request_ está criado
 
 </details>
 
@@ -350,7 +350,7 @@ Neste projeto, verificamos se você é capaz de:
 Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário. 
 **Leva menos de 3 minutos!**
 
-[FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://be-trybe.typeform.com/to/ZTeR4IbH#cohort_hidden=CH35&template=betrybe/sd-0x-project-trybetunes-vite-ts)
+[FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://be-trybe.typeform.com/to/ZTeR4IbH#cohort_hidden=CH35&template=betrybe/sd-035-project-trybetunes-vite-ts)
 
 </details>
 
