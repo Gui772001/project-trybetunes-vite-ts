@@ -1,7 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import Login from './Components/Login';
 import Search from './Components/Search';
-import Layout from './Components/Layout';
 import NotFoud from './Components/NotFoud';
 
 function App() {
