@@ -12,8 +12,8 @@ function Album() {
       if (id) {
         try {
           const data = await getMusics(id);
-          const Album = data[0];
-          setSalvarAlbum(Album);
+          const Album1 = data[0];
+          setSalvarAlbum(Album1);
           const musica = data.slice(1);
           setSalvarMusica(musica);
         } catch (error) {
