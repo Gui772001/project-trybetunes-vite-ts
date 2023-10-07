@@ -48,15 +48,15 @@ function Search() {
           data-testid="search-artist-input"
           type="text"
           name="name"
-          value={FormArtis.name}
-          onChange={handdleartista}
-          disabled={isLoading}
+          value={ FormArtis.name }
+          onChange={ handdleartista }
+          disabled={ isLoading }
         />
       </label>
       <button
         data-testid="search-artist-button"
-        onClick={handleSearchClick}
-        disabled={isLoading || !isNameValid}
+        onClick={ handleSearchClick }
+        disabled={ isLoading || !isNameValid }
       >
         Pesquisar
       </button>
@@ -69,9 +69,9 @@ function Search() {
         <ul>
           {resposta.map((respo) => (
             <Link
-              data-testid={`link-to-album-${respo.collectionId}`}
-              to={`/album/${respo.collectionId}`}
-              key={nanoid()}
+              data-testid={ `link-to-album-${respo.collectionId}` }
+              to={ `/album/${respo.collectionId}` }
+              key={ nanoid() }
             >
               {' '}
               <li>{respo.collectionName}</li>
