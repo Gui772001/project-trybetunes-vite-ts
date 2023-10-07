@@ -6,21 +6,16 @@ import Search from './Components/Search';
 import Layout from './Components/Layout';
 
 function App() {
-  const location = useLocation();
-  const isRootPath = location.pathname === '/';
-
   return (
-    <>
-      <Routes>
-        <Route path="/" element={ <Login /> } />
-      </Routes>
-      {!isRootPath && <Layout />}
-      <Routes>
+    <Routes>
+      <Route path="/" element={ <Login /> } />
+
+      <Route element={ <Layout /> }>
         <Route path="/search" element={ <Search /> } />
         <Route path="/album/:id" element={ <Album /> } />
         <Route path="*" element={ <NotFoud /> } />
-      </Routes>
-    </>
+      </Route>
+    </Routes>
   );
 }
 
