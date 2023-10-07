@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { nanoid } from 'nanoid';
 import { Link } from 'react-router-dom';
 import searchAlbumsAPI from '../services/searchAlbumsAPI';
-import Header from './Header';
-import Album from './Album';
 
 function Search() {
   const [FormArtis, setFormArtis] = useState({
@@ -12,7 +10,8 @@ function Search() {
   const [resposta, setResposta] = useState([]);
   const [resultadoTexto, setResultadoTexto] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const handdleartista = (event: { target: { name: any; value: any; }; }) => {
+
+  const handdleartista = (event) => {
     const { name, value } = event.target;
     setFormArtis({
       ...FormArtis,
@@ -39,6 +38,8 @@ function Search() {
     }
   };
 
+  const isNameValid = FormArtis.name.length >= 2;
+
   return (
     <div>
       <label>
@@ -47,15 +48,15 @@ function Search() {
           data-testid="search-artist-input"
           type="text"
           name="name"
-          value={ FormArtis.name }
-          onChange={ handdleartista }
-          disabled={ isLoading }
+          value={FormArtis.name}
+          onChange={handdleartista}
+          disabled={isLoading}
         />
       </label>
       <button
         data-testid="search-artist-button"
-        onClick={ handleSearchClick }
-        disabled={ isLoading }
+        onClick={handleSearchClick}
+        disabled={isLoading || !isNameValid}
       >
         Pesquisar
       </button>
@@ -67,22 +68,17 @@ function Search() {
       {resposta.length > 0 && (
         <ul>
           {resposta.map((respo) => (
-
             <Link
-              data-testid={ `link-to-album-${respo.collectionId}` }
-              to={ `/album/${respo.collectionId}` }
-              key={ nanoid() }
+              data-testid={`link-to-album-${respo.collectionId}`}
+              to={`/album/${respo.collectionId}`}
+              key={nanoid()}
             >
               {' '}
-              <li>
-                {respo.collectionName}
-              </li>
+              <li>{respo.collectionName}</li>
             </Link>
           ))}
         </ul>
       )}
-      <Album />
-      <Header />
     </div>
   );
 }
